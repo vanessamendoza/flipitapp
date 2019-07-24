@@ -13,9 +13,9 @@ def results():
     print(userdata) #What is userdata??
     word = userdata['word']
     print(word) #What is word??
-    reversed = model.reverseit(word) ##going to model file
+    a = model.reverseit(word) ##going to model file
     ##calling reverseit
     ##passing in word that we stored
     ##storing the return value from that function as reversed
-    print(reversed)
-    return render_template('results.html', reversed = reversed)
+    print(a)
+    return render_template('results.html', reversed = a)
